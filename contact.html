@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Optics Force (Redesign Demo)</title>
+  <meta name="description" content="Optics Force — redesigned static storefront demo." />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header">
+  <div class="utility">
+    <div class="container">
+      <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center">
+        <span class="pill">Need help? <a href="tel:+16312481760">(631) 248-1760</a></span>
+        <span class="pill"><a href="mailto:support@opticsforce.com">support@opticsforce.com</a></span>
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center">
+        <span>Free shipping over $99 • Easy returns</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Optics Force home">
+        <div class="mark">OF</div>
+        <div>
+          <div class="name">Optics Force</div>
+          <div style="color:var(--muted); font-size:12px; letter-spacing:.08em; text-transform:uppercase">Field Journal Storefront</div>
+        </div>
+      </a>
+
+      <nav class="menu" aria-label="Primary">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="shop.html">Shop</a>
+        <a data-nav href="brands.html">Brands</a>
+        <a data-nav href="blog.html">Journal</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+
+      <div class="actions">
+        <button class="iconbtn mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
+        <a class="iconbtn" href="shop.html" aria-label="Search / browse">Browse</a>
+        <a class="iconbtn" href="cart.html" aria-label="Cart">Cart <span class="cartcount" id="cartCount">0</span></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div id="mobileSheet" hidden aria-hidden="true" style="position:fixed; inset:0; background:rgba(0,0,0,.55); z-index:99">
+  <div class="card" style="position:absolute; right:14px; left:14px; top:14px; padding:14px; background:var(--panel2)">
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:10px">
+      <div class="brand">
+        <div class="mark">OF</div>
+        <div class="name">Optics Force</div>
+      </div>
+      <button class="iconbtn" id="mobileClose" aria-label="Close menu">✕</button>
+    </div>
+    <div style="display:grid; gap:8px; margin-top:12px">
+      <a class="btn" href="index.html">Home</a>
+      <a class="btn" href="shop.html">Shop</a>
+      <a class="btn" href="brands.html">Brands</a>
+      <a class="btn" href="blog.html">Journal</a>
+      <a class="btn" href="about.html">About</a>
+      <a class="btn" href="contact.html">Contact</a>
+      <a class="btn primary" href="cart.html">Cart</a>
+    </div>
+  </div>
+</div>
+
+
+<main id="main">
+
+<section class="pageHead">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    <div class="pageTitle">Contact</div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="split">
+      <div class="card panel">
+        <h3>Get help from our experts</h3>
+        <p style="color:var(--muted); margin-top:8px">
+          Phone: <a href="tel:+16312481760">(631) 248-1760</a><br/>
+          Email: <a href="mailto:support@opticsforce.com">support@opticsforce.com</a>
+        </p>
+        <div class="notice" style="margin-top:14px">
+          Demo form — connect to your helpdesk or email service.
+        </div>
+
+        <form onsubmit="event.preventDefault(); alert('Demo only — wire to your backend.');" style="margin-top:14px; display:grid; gap:10px">
+          <input required placeholder="Name" style="padding:12px 12px; border-radius:12px; border:1px solid var(--line); background:rgba(255,255,255,.03); color:var(--text)">
+          <input required type="email" placeholder="Email" style="padding:12px 12px; border-radius:12px; border:1px solid var(--line); background:rgba(255,255,255,.03); color:var(--text)">
+          <textarea required placeholder="How can we help?" rows="5" style="padding:12px 12px; border-radius:12px; border:1px solid var(--line); background:rgba(255,255,255,.03); color:var(--text)"></textarea>
+          <button class="btn primary" type="submit">Send message</button>
+        </form>
+      </div>
+
+      <div class="card" style="overflow:hidden; position:relative; min-height:360px">
+        <div style="position:absolute; inset:0; background-image:url('https://opticsforce.com/cdn/shop/files/Rectangle_838.png?v=1747925186'); background-size:cover; background-position:center; opacity:.95"></div>
+        <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(10,13,16,.20), rgba(10,13,16,.90));"></div>
+        <div style="position:relative; padding:18px">
+          <div class="kicker">Support hours</div>
+          <h3 style="margin:10px 0 8px">Fast replies, field-first.</h3>
+          <p style="margin:0; color:var(--muted)">Add your real hours, chat widget, and FAQs here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="cols">
+      <div class="card panel">
+        <h4>Stay connected</h4>
+        <div style="color:var(--muted)">Get 10% off your first order and stay in the know on cutting-edge optics & gear.</div>
+        <form class="news" onsubmit="event.preventDefault(); alert('Demo only — connect to your email provider.');">
+          <input type="email" placeholder="Email address" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+      <div>
+        <h4>Customer service</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shipping & returns</a></li>
+          <li><a href="blog.html">Journal</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html?c=all-optics">All optics</a></li>
+          <li><a href="shop.html?c=binoculars">Binoculars</a></li>
+          <li><a href="shop.html?c=red-dots">Red dots</a></li>
+          <li><a href="brands.html">Brands</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/opticsforce" target="_blank" rel="noreferrer">Facebook</a></li>
+          <li><a href="https://twitter.com/opticsforce" target="_blank" rel="noreferrer">Twitter/X</a></li>
+          <li><a href="https://instagram.com/opticsforce" target="_blank" rel="noreferrer">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@opticsforce" target="_blank" rel="noreferrer">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="smallprint">
+      <span>© 2026 Optics Force — redesigned demo</span>
+      <span style="font-family:var(--mono)">Static build for GitHub Pages</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module">
+  import { init } from "./assets/js/app.js";
+  init();
+</script>
+
+</body>
+</html>
